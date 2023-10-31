@@ -2,7 +2,7 @@ import './App.css';
 import Navbar from './component/Navbar/Navbar';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Shop from './pages/shop'
-import Product from './pages/product'
+import Product from './pages/Product'
 import Cart from './pages/cart'
 import LoginSignup from './pages/loginSignup'
 import Footer from './component/Footer/Footer';
@@ -18,14 +18,14 @@ function App() {
         <Navbar />
         <Routes>
           <Route path='/' element={<Shop />}/>
-          <Route path='/mens' element={<ShopCategory banner={men_banner} category="mens"/>}/>
-          <Route path='/womens' element={<ShopCategory banner={women_banner} category="womens"/>}/>
+          <Route path='/mens' element={<ShopCategory banner={men_banner} category="men"/>}/>
+          <Route path='/womens' element={<ShopCategory banner={women_banner} category="women"/>}/>
           <Route path='/kids' element={<ShopCategory banner = {kid_banner} category="kid" />}/>
           <Route path='/product' element={<Product/>}>
             <Route path=':productId' element={<Product />}/>
           </Route>
           <Route path='/cart' element={<Cart/>}/>
-          <Route path='/login' element={<loginSignup/>}/>
+          <Route path='/login' element={<LoginSignup/>}/>
         </Routes>
         <Footer />
       </BrowserRouter>
