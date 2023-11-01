@@ -8,10 +8,13 @@ import ProductDisplay from '../component/ProductDisplay/ProductDisplay';
 
 const Product = () => {
   
-  const  all_product  = useContext(ShopContext);
-  const {productID} = useParams()
-  const product = all_product.find((e) => e.id === Number(productID))
-  console.log("Product Data:", productID);
+  // const  all_product  = useContext(ShopContext); <= Error, soalnya context ngasihnya all_product sebagai object dulu, ga langsung array
+  const  {all_product}  = useContext(ShopContext); // <= Hasil koreksi
+  // const {productID} = useParams() <= Error karena ini, tulisannya harusnya productId (lihat : App.js)
+  const {productId} = useParams() // <= Hasil koreksi
+  // const product = all_product.find((e) => e.id === Number(productID)) <= Diganti karena productID menjadi productId
+  const product = all_product.find((e) => e.id === Number(productId)) // <= Hasil koreksi
+  // console.log("Product Data:", productID);
 
 
   return (
