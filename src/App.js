@@ -2,7 +2,16 @@ import './App.css';
 import Navbar from './component/Navbar/Navbar';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Shop from './pages/shop'
-import Product from './pages/Product'
+// Start Correction :
+
+// import Product from './pages/Product' <= Kode sebelumnya, error karena dengan kode import ini, React minta file Product.jsx karena 'Product'
+import Product from './pages/product' // <= Kode sekarang, dikoreksi jadi 'product' karena adanya product.jsx 
+
+// Note :
+// contoh misalnya kalo ./pages/cart maka React akan cari file cart.jsx di folder pages
+// atau misalnya ./component/Footer/Footer maka akan dicari file Footer.jsx di folder component -> Footer
+
+// End Correction
 import Cart from './pages/cart'
 import LoginSignup from './pages/loginSignup'
 import Footer from './component/Footer/Footer';
