@@ -12,7 +12,7 @@ import Product from './pages/product' // <= Kode sekarang, dikoreksi jadi 'produ
 // atau misalnya ./component/Footer/Footer maka akan dicari file Footer.jsx di folder component -> Footer
 
 // End Correction
-import Cart from './pages/cart'
+import Cart from './pages/Cart'
 import LoginSignup from './pages/loginSignup'
 import Footer from './component/Footer/Footer';
 import men_banner from './component/assets/banner_mens.png'

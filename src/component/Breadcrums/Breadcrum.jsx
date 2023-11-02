@@ -6,10 +6,6 @@ import arrow_icon from '../assets/breadcrum_arrow.png'
 const Breadcrum = (props) => {
 
   const {product}  = props;
-
-    if (!product) {
-      return <div>Loading...</div>; // test aktif
-    }
     
     return (
       <div className='breadcrum'>

@@ -17,7 +17,7 @@ const ShopCategory = (props) => {
           sort by <img src={dropdown_icon} alt="" />
         </div>
       </div>
-      <div className="shopcategory-products">
+      <div className="shopcategory-product">
         {all_product.map((item,i)=>{
           if(props.category===item.category){
             return <Item key={i} id={item.id} 

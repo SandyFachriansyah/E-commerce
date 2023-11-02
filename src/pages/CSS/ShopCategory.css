@@ -21,11 +21,11 @@
     font-weight: 600;
 }
 
-.shopcategory-products{
+.shopcategory-product{
     margin: 20px 170px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    row-gap: 80px;
+    gap: 50px;
 }
 
 .shopcategory-loadmore{
